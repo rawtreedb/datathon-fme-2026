@@ -148,7 +148,7 @@ Rules:
 | When | What |
 |---|---|
 | **Saturday, opening** | Data, keys and starter kit released |
-| **Saturday 10:00 → Sunday 10:00** | Practice round: live stream, **public leaderboard** updated every 10 minutes |
+| **Saturday 10:00 → Sunday 10:00** | Practice round: live stream, **public leaderboard** updated every minute (the last hour by default; pick another window in its Beta view) |
 | **Sunday 10:00 → 12:00** | **Final round**: the stream switches to **new data** (new shoppers, new products, new trends). The leaderboard is hidden |
 | **Sunday 12:00** | Submissions close. The stream stops and the **final ranking appears automatically** on the leaderboard page |
 
