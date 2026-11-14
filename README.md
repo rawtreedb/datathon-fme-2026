@@ -137,7 +137,7 @@ Insert **one record per request** into **`team_NN.submissions`**:
 
 Rules:
 
-- **Exactly 10 distinct, active product IDs.** Invalid answers are replaced by the fallback.
+- **Exactly 10 distinct, active product IDs.** Invalid answers are replaced by the fallback. A product that sold out less than 5 seconds before the request still counts (it just cannot be bought), because a stock change can take a moment to show up in `shop.catalog_updates`.
 - The answer must reach RawTree **within 3 seconds of the request `ts`**, as measured by the organisers' clock (polled every half second). Late answers are replaced by the fallback.
 - If you send several answers for the same request, only one counts: send one.
 - **Batch your inserts** (for example, every half second) instead of one HTTP call per request. For reference, the starter baseline polls every 0.3 s and answers in about 1 s (95% within 1.5 s) from the request `ts`: the rest of the 3 seconds is yours to compute.
